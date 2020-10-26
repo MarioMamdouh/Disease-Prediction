@@ -1,0 +1,43 @@
+.tbl{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 10%;
+}
+.dtm{
+    height: 500px;
+}
+.tbl2{
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 80%;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+.welcome{
+    padding: 0px 100px 0px 100px ;
+}
+.dtm{
+    height: 500px;
+}
+.tbl2{
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 80%;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+.dtm2{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+.td1{
+    padding-left: 50px;
+    padding-right: 50px;
+}

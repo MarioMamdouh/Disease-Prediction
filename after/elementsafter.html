@@ -1,0 +1,345 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Disease Prediction</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/themify-icons.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../css/gijgo.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/slicknav.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+	<script>
+ var firebaseConfig = {
+    apiKey: "AIzaSyAYBJkrUGNXyGYO0UL1EVqdTd3TBX75sx0",
+    authDomain: "diseasepridection.firebaseapp.com",
+    databaseURL: "https://diseasepridection.firebaseio.com",
+    projectId: "diseasepridection",
+    storageBucket: "diseasepridection.appspot.com",
+    messagingSenderId: "950090652362",
+    appId: "1:950090652362:web:f8d22a96acdbe5ae7c3233",
+    measurementId: "G-CQN0QQX0NT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+	const auth = firebase.auth();
+	
+	
+	function signOut(){
+		
+		auth.signOut();
+		alert("Signed Out");
+		document.location.href="../index.html";
+	}
+	
+	
+	
+	auth.onAuthStateChanged(function(user){
+		
+		if(user){
+			
+			var email = user.email;
+			alert("Active User " + email);
+			
+			//Take user to a different or home page
+
+			//is signed in
+			
+		}else{
+			
+			alert("No Active User");
+			//no user is signed in
+		}
+		
+		
+		
+	});
+	
+
+
+	</script>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+<header>
+        <div class="header-area ">
+
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="homeafter.html">
+                                    <div>
+                                        <img src="../img/logo.png" style="width: 10%; float: left;width: 100px;height: 100px;">
+                                        <h3 style=" position: relative;top: 18px; left: 10px;color:black;"> Disease Prediction</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                   <ul id="navigation">
+                                          <li><a class="active" href="homeafter.html">home</a></li>
+                                        <li><a href="Departmentafter.html">Disease</a></li>
+                                        <li><a href="elementsafter.html">Check your health</a>
+                                         <li><a href="aboutafter.html">about Us</a></li>
+                                                <li><a href="contactafter.html">Contact</a></li>
+
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="book_btn d-none d-lg-block">
+                                     <a onclick="signOut()">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+<style>
+    .breadcam_bg {
+    background-image: url(../img/banner/red.png);
+}
+</style>
+    <!-- bradcam_area_start  -->
+    <div class="bradcam_area breadcam_bg bradcam_overlay">
+        <div class="container">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </p>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Our Services</h3>
+                        <p><a href="homeafter.html">Home /</a> Check Health</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bradcam_area_end  -->
+
+    <!-- Start Sample Area -->
+    <div class="our_department_area">
+       <div class="container">
+            <div class="row">
+                            <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_department">
+                        <div class="department_thumb">
+                            <img src="../img/heart-attack.jpg" alt="" style="width: 345x; height: 200px;">
+                        </div>
+                        <div class="department_content">
+                            <h3>Heart Disease</h3>
+                            <p>prediction for Heart-Disease</p>
+                            <a href="https://heruko-php.herokuapp.com/" class="boxed-btn3">Prediction</a><br><br>
+                             <a href="Untitled5after.html" class="boxed-btn3">Analysis</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_department">
+                        <div class="department_thumb">
+                            <img src="../img/diabetes1.png" alt="" style="width: 345x; height: 200px;">
+                        </div>
+                        <div class="department_content">
+                            <h3>Diabetes</h3>
+                            <p>prediction for Diabetes </p>
+                            <a href="https://diabetes-py.herokuapp.com/?fbclid=IwAR2QeQ9axYpERLGC_ZGiBzQycqXJgb1fByNr5x7_Acso3_iaGDORrZ_x560" class="boxed-btn3">Prediction</a><br><br>
+                             <a href="diabetesana.html" class="boxed-btn3">Analysis</a>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+    </div>
+    </div>
+    
+    <!-- End Sample Area -->
+
+    <!-- Start Button -->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo " style="display:inline-block;">
+                                <a href="homeafter.html">
+                                   <div>
+                                    <img src="../img/logo.png" style="width: 10%; float: left;width: 100px;height: 100px;">
+                                    <h3 style=" position: relative;top: 18px; left: 10px;color: aliceblue;"> Disease Prediction</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <p>
+                               The beginning of health is to know the disease.
+
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/Diseases-prediction-102764418197812">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/Diseasespredic1?fbclid=IwAR2kTuy10T22kY7o5TDr90U-0CBDS198kpoUDZJUgpPh-EYutWAnMMPbOEY">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/diseasesprediction/?fbclid=IwAR3hobNgiSj52bZbIx_oOeu0kHQkGap8C5c3Xib8bdcBvSZoMBO3e88xJco">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Diseases
+                            </h3>
+                            <ul>
+                                <li><a href="../heart/stomc.html">Stomach Cancer</a></li>
+                                <li><a href="../heart/Alzheimer.html">Alzheimer</a></li>
+                                <li><a href="../heart/braincancer.html">Brain Cancer</a></li>
+                                <li><a href="../heart/breast%20cancer.html">Breast Cancer</a></li>
+                                <li><a href="../heart/diabetes.html">Diabetes</a></li>
+                                <li><a href="../heart/heart.html">Heart</a></li>
+                                <li><a href="../heart/influenza.html">Influenza</a></li>
+                                <li><a href="../heart/Pneumonia.html">Pneumonia</a></li>
+                                <li><a href="../heart/renalfailure.html">Renalfailure</a></li>
+                                <li><a href="../heart/septicemia.html">Septicemia</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Useful Links
+                            </h3>
+                            <ul>
+                                <li><a class="active" href="homeafter.html">home</a></li>
+                                <li><a href="aboutafter.html">about Us</a></li>
+                                <li><a href="contactafter.html">Contact</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- address-->
+                </div>
+            </div>
+        </div>
+      
+    </footer>
+    <!-- footer end  -->
+    <!-- link that opens popup -->
+
+    <!-- form itself end-->
+   
+    <!-- form itself end -->
+
+    <!-- JS here -->
+    <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="../js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/ajax-form.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/scrollIt.js"></script>
+    <script src="../js/jquery.scrollUp.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/nice-select.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/gijgo.min.js"></script>
+    <!--contact js-->
+    <script src="../js/contact.js"></script>
+    <script src="../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../js/jquery.form.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/mail-script.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
